@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://casino-s-bystrymi-vyplatami983.github.io/sitemap.xml

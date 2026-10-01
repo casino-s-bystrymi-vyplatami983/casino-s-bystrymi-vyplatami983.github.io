@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Казино с быстрыми выплатами 2026: 12 ситуаций с выводом и решения</title>
+<meta name="description" content="Кейс-таблица «ситуация → решение» для игроков из России: почему вывод висит в pending, что просит верификация, сколько идут деньги по СБП, на карту и в USDT, куда жаловаться. Честные операторы, 2026.">
+<link rel="canonical" href="https://casino-s-bystrymi-vyplatami983.github.io/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Казино с быстрыми выплатами: 12 ситуаций с выводом и что делать в каждой">
+<meta property="og:description" content="Pending-период, верификация, рельсы СБП / карта / USDT, лимиты, бонусные условия, маршрут жалобы регулятору. Таблицы и схемы, без партнёрских ссылок.">
+<meta property="og:url" content="https://casino-s-bystrymi-vyplatami983.github.io/">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Onest:wght@400..700&display=swap">
+<style>
+:root{
+  --bg:#f2f2ef;--card:#fbfbf9;--card-2:#e8e8e3;--raise:#ffffff;
+  --text:#202327;--text-2:#4a4e54;--text-3:#70757c;--rule:#d5d6d1;--rule-2:#aaada7;
+  --amber:#a8650a;--amber-deep:#8f5508;--amber-tint:#f6e9d1;--on-amber:#1c1206;
+  --ok:#2e7556;--ok-tint:#dceee4;--no:#a2352b;--no-tint:#f4dedb;--wait:#4f6391;--wait-tint:#dfe5f2;
+  --mark:#f6e9d1;--bar-base:#d2d3cd;
+  --f-serif:"Lora","Iowan Old Style",Georgia,"Times New Roman",serif;
+  --f-sans:"Onest","Segoe UI",Roboto,system-ui,sans-serif;
+  --t-h1:clamp(2rem,1.3rem + 2.6vw,3rem);--t-h2:clamp(1.45rem,1.2rem + 1vw,1.8rem);--t-h3:1.15rem;
+  --t-lead:clamp(1.05rem,1rem + .35vw,1.17rem);--t-body:1.05rem;--t-ui:.93rem;--t-small:.86rem;--t-micro:.76rem;
+  --g:clamp(16px,4vw,24px);--block:clamp(44px,6vw,76px);
+  --w-text:700px;--w-page:1060px;
+  --rad:5px;--rad-l:9px;
+  --sh-1:0 1px 1px rgba(32,35,39,.06),0 1px 3px rgba(32,35,39,.07);
+  --sh-2:0 3px 10px rgba(32,35,39,.08),0 14px 28px -16px rgba(32,35,39,.22);
+  --ease:cubic-bezier(.2,.8,.3,1);--dur:180ms;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1b1d20;--card:#232629;--card-2:#2c3034;--raise:#30343a;
+  --text:#e9e7e2;--text-2:#b7b5af;--text-3:#8e8d87;--rule:#363a3f;--rule-2:#50555c;
+  --amber:#e2a23a;--amber-deep:#cf9030;--amber-tint:#3a2d14;--on-amber:#1c1206;
+  --ok:#6cc09c;--ok-tint:#1e3329;--no:#e5786c;--no-tint:#3b211d;--wait:#8fa5d6;--wait-tint:#252d3f;
+  --mark:#3a2d14;--bar-base:#3c4046;
+  --sh-1:0 1px 2px rgba(0,0,0,.45);--sh-2:0 3px 10px rgba(0,0,0,.5),0 16px 30px -16px rgba(0,0,0,.65);
+  color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#1b1d20;--card:#232629;--card-2:#2c3034;--raise:#30343a;
+  --text:#e9e7e2;--text-2:#b7b5af;--text-3:#8e8d87;--rule:#363a3f;--rule-2:#50555c;
+  --amber:#e2a23a;--amber-deep:#cf9030;--amber-tint:#3a2d14;--on-amber:#1c1206;
+  --ok:#6cc09c;--ok-tint:#1e3329;--no:#e5786c;--no-tint:#3b211d;--wait:#8fa5d6;--wait-tint:#252d3f;
+  --mark:#3a2d14;--bar-base:#3c4046;
+  --sh-1:0 1px 2px rgba(0,0,0,.45);--sh-2:0 3px 10px rgba(0,0,0,.5),0 16px 30px -16px rgba(0,0,0,.65);
+  color-scheme:dark;}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:68px}
+body{margin:0;background:var(--bg);color:var(--text);font:400 var(--t-body)/1.62 var(--f-sans);-webkit-font-smoothing:antialiased}
+p{margin:0 0 .8rem;text-wrap:pretty}
+h1,h2,h3{font-family:var(--f-serif);margin:0;text-wrap:balance;font-weight:600}
+h1{font-size:var(--t-h1);line-height:1.08;letter-spacing:-.01em}
+h2{font-size:var(--t-h2);line-height:1.2}
+h3{font-size:var(--t-h3);line-height:1.3}
+a{color:var(--amber-deep);text-decoration-thickness:1px;text-underline-offset:.15em}
+a:hover{color:var(--amber)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:var(--rad)}
+::selection{background:var(--mark)}
+.page{max-width:var(--w-page);margin:0 auto;padding:0 var(--g)}
+.text{max-width:var(--w-text)}
+.num{font-variant-numeric:tabular-nums}
+.small{font-size:var(--t-small);color:var(--text-2)}
+.quiet{color:var(--text-3)}
+abbr[title]{text-decoration:underline dotted;text-underline-offset:.15em;cursor:help}
+
+/* mast */
+.mast{position:sticky;top:0;z-index:20;height:56px;background:color-mix(in srgb,var(--bg) 92%,transparent);border-bottom:1px solid transparent;transition:border-color var(--dur) var(--ease),box-shadow var(--dur) var(--ease)}
+.mast.is-stuck{border-bottom-color:var(--rule);box-shadow:var(--sh-1)}
+.mast .page{display:flex;align-items:center;gap:20px;height:100%}
+.brand{font-family:var(--f-serif);font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.brand svg{width:22px;height:22px}
+.anchors{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;margin-left:auto;-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent)}
+.anchors::-webkit-scrollbar{display:none}
+.anchors a{color:var(--text-2);text-decoration:none;font-size:var(--t-ui);padding:6px 9px;border-radius:var(--rad);white-space:nowrap}
+.anchors a:hover{background:var(--card-2);color:var(--text)}
+.anchors a.is-here{color:var(--amber-deep);background:var(--amber-tint)}
+
+/* opening */
+.opening{padding:clamp(28px,5vw,56px) 0 clamp(20px,4vw,36px)}
+.dateline{font-size:var(--t-small);color:var(--text-3);margin-bottom:14px}
+.opening h1{max-width:900px;margin-bottom:18px}
+.lead{font-size:var(--t-lead);color:var(--text-2);max-width:760px;margin-bottom:22px}
+.howread{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;max-width:900px}
+.howread div{background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-l);padding:12px 14px;font-size:var(--t-ui)}
+.howread b{display:block;font-family:var(--f-serif);font-size:1rem;margin-bottom:3px}
+.howread i{font-style:normal;color:var(--text-3)}
+
+/* blocks */
+.block{padding:var(--block) 0 0}
+.block > .page > h2{margin-bottom:12px}
+.block .intro{color:var(--text-2);max-width:var(--w-text);margin-bottom:18px}
+.idx{font-family:var(--f-serif);color:var(--amber);font-size:var(--t-small);letter-spacing:.04em;margin-bottom:6px;display:block}
+
+/* casebook */
+.picker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+.picker span{font-size:var(--t-small);color:var(--text-3);margin-right:4px}
+.picker button{font:500 var(--t-ui)/1 var(--f-sans);color:var(--text-2);background:var(--card);border:1px solid var(--rule);border-radius:var(--rad);padding:8px 11px;cursor:pointer;transition:background var(--dur) var(--ease),color var(--dur) var(--ease),border-color var(--dur) var(--ease)}
+.picker button:hover{border-color:var(--rule-2);color:var(--text)}
+.picker button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.picker output{font-size:var(--t-small);color:var(--text-3);margin-left:auto}
+.ledger{overflow-x:auto;border:1px solid var(--rule);border-radius:var(--rad-l);background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:var(--t-ui)}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+thead th{font-weight:600;color:var(--text-3);font-size:var(--t-small);background:var(--card-2);position:sticky;top:0}
+tbody tr:last-child td{border-bottom:0}
+.ledger table{min-width:860px}
+.ledger th.grp{background:var(--amber-tint);color:var(--amber-deep);font-family:var(--f-serif);font-weight:600;font-size:var(--t-ui)}
+.ledger td:first-child{color:var(--text-3);font-family:var(--f-serif);width:38px}
+.ledger td:nth-child(2){font-weight:500;min-width:200px}
+.ledger td:nth-child(5){white-space:nowrap}
+.ledger tr[hidden]{display:none}
+.verdict{display:inline-block;font-size:var(--t-micro);padding:2px 7px;border-radius:var(--rad);font-weight:600;letter-spacing:.01em;margin-top:4px}
+.verdict.fast{background:var(--ok-tint);color:var(--ok)}
+.verdict.wait{background:var(--wait-tint);color:var(--wait)}
+.verdict.risk{background:var(--no-tint);color:var(--no)}
+
+/* capsule */
+.capsule{display:grid;gap:22px;grid-template-columns:minmax(0,1fr)}
+.capsule .answer{font-size:var(--t-lead);max-width:var(--w-text)}
+.capsule .answer strong{font-weight:600}
+.pair{border:1px solid var(--rule);border-radius:var(--rad-l);background:var(--card);padding:16px;margin:0}
+.pair svg{display:block;width:100%;height:auto;font-family:var(--f-sans)}
+.pair figcaption{font-size:var(--t-small);color:var(--text-3);margin:10px 0 0}
+.pair .flat{overflow-x:auto;margin-top:12px;border-top:1px solid var(--rule);padding-top:8px}
+.pair table{font-size:var(--t-small)}
+.pair td:not(:first-child),.pair th:not(:first-child){white-space:nowrap}
+.key{display:flex;flex-wrap:wrap;gap:12px 16px;font-size:var(--t-small);color:var(--text-2);margin-top:8px}
+.key i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+.docs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;max-width:900px;margin:6px 0 14px}
+.docs div{background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-l);padding:14px}
+.docs h3{font-size:1.05rem;margin-bottom:6px}
+.docs p{font-size:var(--t-ui);margin:0;color:var(--text-2)}
+.metrics{list-style:none;margin:0 0 14px;padding:0;max-width:var(--w-text);display:grid;gap:8px}
+.metrics li{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;padding:10px 12px;background:var(--card);border:1px solid var(--rule);border-radius:var(--rad)}
+.metrics b{font-family:var(--f-serif);font-weight:600}
+.metrics span{font-size:var(--t-ui);color:var(--text-2)}
+
+/* details */
+details.q{border-top:1px solid var(--rule);max-width:var(--w-text)}
+details.q:last-of-type{border-bottom:1px solid var(--rule)}
+details.q summary{cursor:pointer;list-style:none;padding:14px 32px 14px 0;font-family:var(--f-serif);font-weight:600;font-size:1.05rem;position:relative}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"";position:absolute;right:6px;top:50%;width:9px;height:9px;border-right:2px solid var(--amber);border-bottom:2px solid var(--amber);transform:translateY(-70%) rotate(45deg);transition:transform var(--dur) var(--ease)}
+details.q[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+details.q .reply{padding:0 0 16px;color:var(--text-2)}
+
+/* route */
+.route{counter-reset:s;list-style:none;padding:0;margin:0 0 14px;max-width:var(--w-text);display:grid;gap:10px}
+.route li{counter-increment:s;position:relative;padding:12px 14px 12px 52px;background:var(--card);border:1px solid var(--rule);border-radius:var(--rad-l)}
+.route li::before{content:counter(s);position:absolute;left:14px;top:12px;width:26px;height:26px;border-radius:50%;background:var(--amber);color:var(--on-amber);font:600 .9rem/26px var(--f-sans);text-align:center}
+.route b{font-family:var(--f-serif);font-weight:600}
+
+/* care + channel + foot */
+.care{margin-top:var(--block);background:var(--card-2);border-radius:var(--rad-l);padding:16px 18px;font-size:var(--t-ui);color:var(--text-2);max-width:900px}
+.channel{margin-top:var(--block);background:var(--text);color:var(--bg);border-radius:var(--rad-l);padding:clamp(22px,4vw,34px);display:grid;gap:14px;grid-template-columns:minmax(0,1fr) auto;align-items:center}
+.channel h2{color:var(--bg);font-size:1.4rem;margin-bottom:6px}
+.channel p{margin:0;color:color-mix(in srgb,var(--bg) 78%,transparent);max-width:560px}
+.channel a.go{display:inline-block;background:var(--amber);color:var(--on-amber);text-decoration:none;font-weight:600;padding:12px 18px;border-radius:var(--rad-l);box-shadow:var(--sh-2);transition:background var(--dur) var(--ease)}
+.channel a.go:hover{background:var(--amber-deep);color:var(--on-amber)}
+footer{margin-top:var(--block);padding:28px 0 40px;border-top:1px solid var(--rule);font-size:var(--t-small);color:var(--text-3)}
+footer .cols{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer b{color:var(--text-2);font-weight:600}
+
+@media (max-width:760px){
+  .metrics li{grid-template-columns:1fr}
+  .channel{grid-template-columns:1fr}
+  .ledger td:nth-child(5){white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){*{transition-duration:1ms!important;scroll-behavior:auto!important}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","@id":"https://casino-s-bystrymi-vyplatami983.github.io/#page","headline":"Казино с быстрыми выплатами: как получить выигрыш за час, а не за неделю — Россия, 2026","description":"Кейс-таблица «ситуация → решение» для игроков из России: почему вывод висит в pending, что просит верификация, сколько идут деньги по СБП, на карту и в USDT, куда жаловаться. Честные операторы, 2026.","inLanguage":"ru","datePublished":"2026-10-01","dateModified":"2026-10-01","author":{"@type":"Organization","name":"Редакция «Касса за час»"},"publisher":{"@type":"Organization","name":"Касса за час"},"mainEntityOfPage":"https://casino-s-bystrymi-vyplatami983.github.io/"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","@id":"https://casino-s-bystrymi-vyplatami983.github.io/#howto-zavisla","name":"Что делать, если выплата зависла: маршрут из пяти шагов","totalTime":"P14D","step":[
+ {"@type":"HowToStep","position":1,"name":"Зафиксируйте запрос.","text":"Зафиксируйте запрос. Сохраните ID заявки на вывод, дату и время, сумму, выбранный способ и скриншот статуса в кассе. Без этих данных поддержка отвечает шаблоном."},
+ {"@type":"HowToStep","position":2,"name":"Проверьте свою сторону.","text":"Проверьте свою сторону. Верификация пройдена, оборот депозита выполнен, при игре с бонусом не превышалась максимальная ставка, сеть кошелька указана верно. Любой из этих пунктов объясняет паузу без вины оператора."},
+ {"@type":"HowToStep","position":3,"name":"Один тикет в поддержку.","text":"Один тикет в поддержку. Спросите письменно причину и срок, сошлитесь на пункт правил о сроках вывода. Не плодите чаты и не отменяйте заявку: отмена возвращает деньги на баланс, а новая заявка запускает pending-период заново."},
+ {"@type":"HowToStep","position":4,"name":"Эскалация через 72 часа.","text":"Эскалация через 72 часа. Письмо на адрес жалоб или compliance-отдела оператора с приложенной перепиской и ID заявки. Укажите, что при отсутствии ответа обратитесь к регулятору по номеру лицензии."},
+ {"@type":"HowToStep","position":5,"name":"Регулятор или ADR через 14 дней.","text":"Регулятор или ADR через 14 дней. Форма жалобы Curaçao Gaming Authority, Player Support Unit у MGA, Kahnawake Gaming Commission или независимый ADR вроде eCOGRA, если оператор его указал. Приложите всё из шага 1 и переписку из шагов 3–4."}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://casino-s-bystrymi-vyplatami983.github.io/#faq","mainEntity":[
+ {"@type":"Question","name":"Сколько реально ждать выплату в 2026 году?","acceptedAnswer":{"@type":"Answer","text":"В казино с быстрыми выплатами у верифицированного игрока без активного бонуса при выводе по СБП или в USDT TRC-20 деньги приходят за 0,5–4 часа: это pending-период плюс обработка плюс зачисление. Первый вывод без верификации занимает 3–50 часов из-за проверки документов. Крупная сумма выше порога ручной проверки с зачислением на карту укладывается в 30–96 часов. Цифры по профилям есть в таблице раздела «Из чего складывается срок»."}},
+ {"@type":"Question","name":"Почему казино с быстрыми выплатами платит быстро только после верификации?","acceptedAnswer":{"@type":"Answer","text":"Лицензионный оператор обязан установить личность до первой выплаты по правилам AML своего регулятора. Пока документы не проверены, заявка стоит в очереди на KYC, а это самый длинный этап. Загрузите паспорт, селфи и подтверждение адреса сразу после регистрации, до первого депозита, тогда первый вывод пойдёт по короткому сценарию."}},
+ {"@type":"Question","name":"Ускорит ли выплату отмена заявки и новый запрос?","acceptedAnswer":{"@type":"Answer","text":"Нет. Отмена возвращает сумму на игровой баланс, а новая заявка встаёт в конец очереди и заново отсчитывает pending-период. Если касса работает батчами по cut-off, вы рискуете пропустить ближайший батч. Единственный случай, когда пересоздать заявку разумно: вы ошиблись в реквизитах или в сети кошелька."}},
+ {"@type":"Question","name":"Что такое reverse withdrawal и чем он опасен?","acceptedAnswer":{"@type":"Answer","text":"Это кнопка, которая возвращает ожидающую выплату обратно на баланс одним нажатием. Операторы держат её в интерфейсе, потому что часть игроков отменяет вывод и проигрывает его. Комиссия по азартным играм Великобритании (UKGC) с 2020 года запрещает своим лицензиатам эту функцию, у операторов под лицензией Кюрасао она встречается регулярно. Если кнопка есть, не трогайте её."}},
+ {"@type":"Question","name":"Банк задержал зачисление на два дня — это вина оператора?","acceptedAnswer":{"@type":"Answer","text":"Чаще нет. С 25 июля 2024 года по 161-ФЗ российский банк обязан приостановить на два дня перевод, если реквизиты получателя или отправителя есть в базе Банка России о мошеннических операциях, а по 115-ФЗ банк вправе запросить документы о происхождении средств. Выплата оператора при этом уже исполнена: у вас есть ID транзакции. Отвечайте банку по существу и не дробите поступления по нескольким картам."}},
+ {"@type":"Question","name":"Кто берёт комиссию за вывод?","acceptedAnswer":{"@type":"Answer","text":"Три участника: оператор (часто бесплатно 1–3 вывода в сутки, дальше 1–3 %), платёжный провайдер (фиксированная сумма за транзакцию на карту или сетевая комиссия в USDT — несколько долларов в TRC-20) и банк получателя при конвертации валюты. Сумму комиссии касса обязана показать до подтверждения заявки; если её показывают только постфактум, это красный флаг."}}
+]}
+</script>
+</head>
+<body>
+
+<header class="mast" id="mast">
+  <div class="page">
+    <a class="brand" href="#top" aria-label="Касса за час — на начало страницы">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="12" fill="var(--text)"/><circle cx="32" cy="32" r="21" fill="none" stroke="var(--amber)" stroke-width="3"/><path d="M32 18v14l9 6" fill="none" stroke="var(--amber)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Касса за час
+    </a>
+    <nav class="anchors" aria-label="Разделы страницы">
+      <a href="#cases">Кейсы</a><a href="#pending">Pending</a><a href="#rails">Рельсы</a><a href="#kyc">Верификация</a><a href="#profiles">Сроки</a><a href="#rules">Правила</a><a href="#rating">Рейтинг</a><a href="#bonus">Бонус</a><a href="#stuck">Если зависло</a><a href="#bank">Банк</a><a href="#faq">Вопросы</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="opening">
+  <div class="page">
+    <p class="dateline num">Обновлено 1 октября 2026 · Россия · редакция «Касса за час»</p>
+    <h1>Казино с быстрыми выплатами: как получить выигрыш за час, а не за неделю — Россия, 2026</h1>
+    <p class="lead">Скорость выплаты складывается из четырёх отрезков: pending-период оператора, проверка (KYC, вейджер, лимит), обработка платёжным провайдером и зачисление банком или сетью. Честные лицензионные операторы быстры в первых трёх, четвёртый зависит от рельса: СБП и USDT TRC-20 укладываются в минуты, карта МИР через посредника — до трёх дней. Ниже двенадцать типовых ситуаций, в которых казино с быстрыми выплатами оказывается медленным, и решение для каждой — для игроков из России, на сегодня.</p>
+    <div class="howread" aria-label="Как читать таблицу кейсов">
+      <div><b>Ситуация</b><i>что вы видите в кассе или в банке</i></div>
+      <div><b>Причина</b><i>какой механизм сработал: правило оператора, рельс, закон</i></div>
+      <div><b>Решение</b><i>действие, которое сокращает срок, и чего не делать</i></div>
+      <div><b>Срок после решения</b><i>типовой диапазон по правилам касс; не гарантия</i></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="cases">
+  <div class="page">
+    <span class="idx num">01</span>
+    <h2>Карта ситуаций: что тормозит выплату и что делать</h2>
+    <p class="intro">Таблица собрана из повторяющихся сценариев, которые игроки описывают в спорах с кассами. Каждая строка — один механизм. Если ваш случай совпал с несколькими строками, сроки складываются, а не выбирается больший. Та же таблица отвечает, какое казино с быстрыми выплатами выбрать: то, у которого ваш сценарий попадает в строки с пометкой «быстро».</p>
+    <div class="picker" role="group" aria-label="Фильтр ситуаций">
+      <span>Показать:</span>
+      <button type="button" data-pick="all" aria-pressed="true">Все</button>
+      <button type="button" data-pick="before" aria-pressed="false">До первого вывода</button>
+      <button type="button" data-pick="rail" aria-pressed="false">Рельсы</button>
+      <button type="button" data-pick="limit" aria-pressed="false">Лимиты и бонус</button>
+      <button type="button" data-pick="bank" aria-pressed="false">Банк и спор</button>
+      <output aria-live="polite">12 из 12</output>
+    </div>
+    <div class="ledger">
+      <table>
+        <caption class="small" style="text-align:left;padding:10px 12px;caption-side:bottom">Сроки — типовые диапазоны из правил касс лицензионных операторов и регламентов платёжных систем, 2026. Названий операторов в таблице нет намеренно: механизмы одинаковы, различаются только пороги.</caption>
+        <thead><tr><th>№</th><th>Ситуация</th><th>Причина</th><th>Решение</th><th>Срок после решения</th></tr></thead>
+        <tbody>
+          <tr><th class="grp" colspan="5">До первого вывода</th></tr>
+          <tr data-grp="before"><td class="num">1</td><td>Выигрыш на балансе, кнопка вывода неактивна или заявку отклоняют без объяснений</td><td>Не выполнен оборот депозита. Большинство касс требуют прокрутить сумму депозита x1–x3 до вывода — это требование AML-политики против отмывания через «депозит — вывод»</td><td>Найти в правилах пункт об обороте депозита (wagering of deposit) и доиграть недостающий оборот ставками без бонуса. Не писать в поддержку до этого: ответ будет тем же</td><td class="num">0,5–3 ч <span class="verdict fast">быстро</span></td></tr>
+          <tr data-grp="before"><td class="num">2</td><td>Заявка сутки висит в статусе pending, деньги со счёта не списаны</td><td>Pending-период: окно, в котором заявка ждёт очереди или ближайшего батча по cut-off, обычно 0–24 ч. У части операторов в это окно доступен reverse withdrawal</td><td>Ждать и не отменять. Проверить в правилах время cut-off и работает ли касса в выходные. Отмена сбрасывает очередь</td><td class="num">до 24 ч <span class="verdict wait">ожидание</span></td></tr>
+          <tr data-grp="before"><td class="num">3</td><td>После запроса на вывод касса просит паспорт, селфи и счёт за коммунальные услуги</td><td>KYC запускается по первой заявке на вывод, а не при депозите. Регулятор требует установить личность до выплаты; очередь на проверку — от часов до двух суток</td><td>Загрузить документы одним комплектом в хорошем качестве; при следующей регистрации у любого оператора проходить верификацию до депозита</td><td class="num">2–48 ч <span class="verdict wait">ожидание</span></td></tr>
+          <tr><th class="grp" colspan="5">Рельсы зачисления</th></tr>
+          <tr data-grp="rail"><td class="num">4</td><td>Статус «выплачено», на карте пусто второй день</td><td>Зачисление на карту идёт через P2P-посредника, а не прямым OCT-переводом: деньги проходят через счёт платёжного агента и доходят до 3 банковских дней</td><td>Дождаться срока рельса; затем запросить у поддержки ID транзакции провайдера и обратиться в банк с ним. В следующий раз выбрать СБП или USDT</td><td class="num">1 ч – 3 дня <span class="verdict wait">ожидание</span></td></tr>
+          <tr data-grp="rail"><td class="num">5</td><td>Депозит по СБП прошёл, а вывода по СБП нет в списке</td><td>Приём по СБП у провайдера есть (C2B), а исходящие B2C-переводы по СБП подключены не у всех: разные договоры с банком-участником</td><td>Выбрать карту МИР или USDT TRC-20. Если у оператора вывод только банковским переводом, ждать 1–5 рабочих дней</td><td class="num">зависит от рельса <span class="verdict wait">ожидание</span></td></tr>
+          <tr data-grp="rail"><td class="num">6</td><td>USDT отправлен (есть хэш), на бирже или в кошельке баланс не изменился</td><td>Указана не та сеть: ERC-20 вместо TRC-20, или адрес без memo там, где он нужен. Транзакция в блокчейне исполнена, вернуть её нельзя</td><td>Проверить хэш в обозревателе сети (для Tron — Tronscan): если 19+ подтверждений и адрес ваш, писать в поддержку биржи о зачислении по хэшу. Если адрес чужой или сеть не та — средства потеряны</td><td class="num">5–30 мин <span class="verdict risk">риск</span></td></tr>
+          <tr><th class="grp" colspan="5">Лимиты и бонусные условия</th></tr>
+          <tr data-grp="limit"><td class="num">7</td><td>Сумма выигрыша больше, чем касса разрешает вывести за раз или за сутки</td><td>Лимиты на транзакцию, сутки, неделю и месяц прописаны в правилах; суммы выше порога ручной проверки (часто от 1 000–2 000 € в эквиваленте) уходят на рассмотрение compliance</td><td>Разбить на заявки по лимиту и подавать ежедневно; при крупном выигрыше запросить у поддержки повышенный лимит и подготовить документ о происхождении средств</td><td class="num">24–72 ч на заявку <span class="verdict wait">ожидание</span></td></tr>
+          <tr data-grp="limit"><td class="num">8</td><td>Выиграли с бонуса 80 000 ₽, после отыгрыша к выводу одобрили 20 000 ₽</td><td>Max cashout: потолок выплаты с бонусных денег, прописанный в условиях акции, остальное аннулируется по правилам</td><td>Оспорить нельзя, если пункт был в условиях до активации. Решение на будущее: крупные сессии играть без бонуса или брать бонусы без потолка выплаты</td><td class="num">— <span class="verdict risk">риск</span></td></tr>
+          <tr data-grp="limit"><td class="num">9</td><td>Выигрыш с бонуса аннулирован целиком со ссылкой на «нарушение условий»</td><td>Превышена максимальная ставка при активном бонусе (обычно 5 € или 500 ₽ за спин) либо сыграна игра из списка исключённых — это считается irregular play</td><td>Запросить у поддержки конкретный пункт и номер раунда. Если нарушения нет, идти по маршруту спора; если есть — принять и впредь ставить ниже порога</td><td class="num">3–7 дней спора <span class="verdict risk">риск</span></td></tr>
+          <tr><th class="grp" colspan="5">Банк получателя и спор</th></tr>
+          <tr data-grp="bank"><td class="num">10</td><td>Банк приостановил входящий перевод и просит пояснить источник</td><td>115-ФЗ: банк вправе запросить документы по операции с признаками из методических рекомендаций ЦБ 16-МР; 161-ФЗ: двухдневная пауза, если реквизиты есть в базе Банка России</td><td>Ответить банку по существу: откуда средства, какая платформа, приложить ID транзакции. Не разносить поступления по пяти картам — это признак дроппера</td><td class="num">2 рабочих дня <span class="verdict wait">ожидание</span></td></tr>
+          <tr data-grp="bank"><td class="num">11</td><td>После заявки на вывод аккаунт заблокирован</td><td>Совпадение данных с другим аккаунтом (мультиаккаунт), вход из запрещённой лицензией юрисдикции, расхождение имени в профиле и в документах</td><td>Запросить причину письменно и приложить документы, которые снимают подозрение. Если ответ не пришёл за 72 ч — эскалация и регулятор</td><td class="num">3–14 дней <span class="verdict risk">риск</span></td></tr>
+          <tr data-grp="bank"><td class="num">12</td><td>Поддержка отвечает шаблоном «ожидайте» дольше недели</td><td>Очередь compliance или проблема у провайдера, о которой оператор не сообщает; иногда — признак кассового разрыва</td><td>Маршрут из пяти шагов в разделе «Если выплата зависла»: фиксация, тикет, эскалация, регулятор по номеру лицензии, ADR</td><td class="num">до 30 дней у регулятора <span class="verdict risk">риск</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pending">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">02</span>
+      <h2>Pending-период и reverse withdrawal: первые сутки после запроса</h2>
+    </div>
+    <p class="answer">Самый частый тормоз — не банк и не проверка, а <strong>окно ожидания внутри кассы</strong>. У быстрых операторов оно от нуля до двух часов, у медленных — 24 часа и больше, и в это окно встроена кнопка отмены.</p>
+    <div class="text">
+      <p>Pending-период — время между вашим запросом и моментом, когда заявка уходит платёжному провайдеру. Оператор объясняет его защитой от ошибок: игрок может передумать, исправить реквизиты, выбрать другой способ. На практике окно решает две задачи кассы. Первая — собрать заявки в батч и отправить их провайдеру одним файлом в фиксированное время (cut-off, например 10:00 и 18:00 по времени оператора). Вторая — дать игроку шанс вернуть деньги на баланс и продолжить игру. Эта вторая задача называется reverse withdrawal, и у неё плохая репутация: Комиссия по азартным играм Великобритании (UKGC) ещё в 2020 году потребовала от своих лицензиатов убрать функцию обратного вывода, а операторы под лицензией Кюрасао такой нормы не имеют, поэтому там pending длиной в сутки и кнопка отмены встречаются регулярно.</p>
+      <p>Что из этого следует. Короткий pending — первый признак казино с быстрыми выплатами, и проверять его стоит до регистрации: он написан в разделе правил о выплатах, обычно формулировкой «заявки обрабатываются в течение N часов». Если N равно 24 или 48, ждите две-три батч-отправки в сутки. Если указано «мгновенно после одобрения», вопрос только в рельсе зачисления. Отсутствие кнопки отмены — хороший знак, а не неудобство.</p>
+      <p>В окне ожидания нельзя делать три вещи. Отменять заявку, чтобы «переподать» её: новая встанет в конец очереди. Писать в поддержку по истечении первого часа: ответ придёт шаблоном о сроках из правил. Играть на деньги, зарезервированные под вывод: у части касс запрос снимает сумму с игрового баланса, у части — нет, и ставка из этой суммы автоматически отменяет заявку.</p>
+    </div>
+    <details class="q">
+      <summary>Статус «в обработке» не меняется 36 часов — это уже нарушение правил?</summary>
+      <div class="reply">Сверьте с пунктом правил о сроках. Если там «до 24 часов» в рабочие дни, а заявка подана в пятницу вечером, оператор формально в сроке до понедельника. Если срок прошёл в рабочие дни — пишите один тикет с ID заявки и ссылкой на пункт. Статус, который держится дольше 72 часов без письменного объяснения, — повод для эскалации по маршруту в конце страницы.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="rails">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">03</span>
+      <h2>Рельсы зачисления: СБП, карта МИР, USDT TRC-20, кошельки и SWIFT</h2>
+    </div>
+    <p class="answer">После одобрения заявки срок задаёт рельс. <strong>СБП — минуты, USDT TRC-20 — 5–30 минут, карта — от 10 минут до 3 дней</strong> в зависимости от того, прямой это перевод или через посредника. Банковский перевод — 1–5 рабочих дней.</p>
+    <figure class="pair">
+      <svg role="img" width="100%" height="330" aria-labelledby="rails-t rails-d">
+        <title id="rails-t">Срок зачисления после одобрения заявки по шести рельсам, логарифмическая шкала от 1 минуты до 10 дней</title>
+        <desc id="rails-d">Диапазон-бары: СБП от 1 до 15 минут, USDT TRC-20 от 5 до 30 минут, электронный кошелёк от 5 минут до 1 часа, карта прямым OCT-переводом от 10 минут до 24 часов, карта через P2P-посредника от 1 часа до 3 дней, банковский перевод от 1 до 5 рабочих дней.</desc>
+        <g font-size="12" fill="var(--text-3)">
+          <line x1="0%" y1="290" x2="100%" y2="290" stroke="var(--rule-2)"/>
+          <g stroke="var(--rule)"><line x1="0%" y1="12" x2="0%" y2="290"/><line x1="24%" y1="12" x2="24%" y2="290"/><line x1="42.8%" y1="12" x2="42.8%" y2="290"/><line x1="61.5%" y1="12" x2="61.5%" y2="290"/><line x1="76%" y1="12" x2="76%" y2="290"/><line x1="87.4%" y1="12" x2="87.4%" y2="290"/><line x1="96.3%" y1="12" x2="96.3%" y2="290"/></g>
+          <text x="0%" y="308">1 мин</text><text x="24%" y="308" text-anchor="middle">10 мин</text><text x="42.8%" y="308" text-anchor="middle">1 ч</text><text x="61.5%" y="308" text-anchor="middle">6 ч</text><text x="76%" y="308" text-anchor="middle">1 сутки</text><text x="87.4%" y="308" text-anchor="middle">3 дня</text><text x="96.3%" y="308" text-anchor="end">7 дней</text>
+        </g>
+        <g font-size="13" fill="var(--text)">
+          <text x="0%" y="24">СБП</text><rect x="0%" y="30" width="28.3%" height="14" rx="3" fill="var(--ok)"/>
+          <text x="0%" y="68">USDT TRC-20</text><rect x="16.8%" y="74" width="18.7%" height="14" rx="3" fill="var(--ok)"/>
+          <text x="0%" y="112">Электронный кошелёк</text><rect x="16.8%" y="118" width="26%" height="14" rx="3" fill="var(--ok)"/>
+          <text x="0%" y="156">Карта, прямой OCT-перевод</text><rect x="24%" y="162" width="52%" height="14" rx="3" fill="var(--wait)"/>
+          <text x="0%" y="200">Карта через P2P-посредника</text><rect x="42.8%" y="206" width="44.6%" height="14" rx="3" fill="var(--wait)"/>
+          <text x="0%" y="244">Банковский перевод SWIFT / SEPA</text><rect x="76%" y="250" width="16.8%" height="14" rx="3" fill="var(--amber)"/>
+        </g>
+      </svg>
+      <div class="key"><span><i style="background:var(--ok)"></i>минуты</span><span><i style="background:var(--wait)"></i>часы — дни, зависит от посредника</span><span><i style="background:var(--amber)"></i>рабочие дни</span></div>
+      <figcaption>Срок от одобрения заявки оператором до появления денег у получателя. Регламенты НСПК по СБП, Visa Direct / Mastercard Send для OCT, время блока в сети Tron ≈ 3 с и практика провайдеров, 2026. Pending-период и проверки сюда не входят.</figcaption>
+      <div class="flat">
+        <table>
+          <thead><tr><th>Рельс</th><th>От</th><th>До</th><th>Кто задаёт срок</th></tr></thead>
+          <tbody>
+            <tr><td>СБП</td><td class="num">1 мин</td><td class="num">15 мин</td><td>НСПК, банк получателя</td></tr>
+            <tr><td>USDT TRC-20</td><td class="num">5 мин</td><td class="num">30 мин</td><td>сеть Tron, биржа-получатель</td></tr>
+            <tr><td>Электронный кошелёк</td><td class="num">5 мин</td><td class="num">1 ч</td><td>провайдер кошелька</td></tr>
+            <tr><td>Карта, прямой OCT-перевод</td><td class="num">10 мин</td><td class="num">24 ч</td><td>платёжная система, банк-эмитент</td></tr>
+            <tr><td>Карта через P2P-посредника</td><td class="num">1 ч</td><td class="num">3 дня</td><td>платёжный агент</td></tr>
+            <tr><td>Банковский перевод SWIFT / SEPA</td><td class="num">1 раб. день</td><td class="num">5 раб. дней</td><td>банки-корреспонденты</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+    <div class="text">
+      <p>СБП — внутренняя система Банка России, оператор — НСПК. Исходящий перевод игроку идёт как B2C-платёж от юридического лица через банк-участник, деньги видны на счёте через секунды после отправки. Ограничение одно: такой договор есть не у всех провайдеров, обслуживающих иностранных операторов, поэтому вывод по СБП встречается реже, чем депозит по нему. Лимиты по входящим СБП задаёт ваш банк, а не касса. У топовых онлайн казино с быстрыми выплатами СБП на вывод есть, и это первое, что стоит искать в списке способов.</p>
+      <p>Карта — два разных рельса под одной кнопкой. Прямой OCT-перевод (Original Credit Transaction, у Visa это Visa Direct, у Mastercard — Mastercard Send, у МИР — перевод по номеру карты через НСПК) зачисляется от минут до суток и виден в выписке как поступление от платёжного провайдера. P2P-посредник — это когда провайдер переводит деньги с карты физлица-агента на вашу карту: быстрее не станет, зато в выписке появится незнакомое имя отправителя, а перевод может попасть под признаки 16-МР. Какой из рельсов использует касса, видно по названию отправителя в первой же выплате.</p>
+      <p>USDT в сети Tron (TRC-20) — самый предсказуемый рельс: блок каждые 3 секунды, биржи зачисляют после 19–20 подтверждений, то есть примерно через минуту после отправки; остальное время — обработка у оператора. Сетевая комиссия в TRC-20 — несколько USDT, её удерживают из суммы. Единственный способ потерять деньги на этом рельсе — указать адрес другой сети: ERC-20 (Ethereum) или BEP-20 (BNB Chain) выглядят иначе, но кассы не всегда валидируют формат. Для USDT в TON адрес сопровождается memo, без него биржа не найдёт перевод.</p>
+      <p>Банковский перевод остаётся для крупных сумм, когда лимиты карты исчерпаны. SEPA внутри еврозоны — один рабочий день, SWIFT через корреспондентов — до пяти, с комиссиями на каждом звене. Для получателя в России этот рельс почти закрыт из-за ограничений корреспондентских отношений, и честная касса об этом предупреждает в момент выбора способа.</p>
+    </div>
+    <details class="q">
+      <summary>Почему в одном и том же сайте вывод на карту занял 15 минут в прошлый раз и два дня сейчас?</summary>
+      <div class="reply">Провайдер сменил рельс. Прямой OCT-перевод мог стать недоступен (банк-эквайер отключил маршрут), и касса переключила выплаты на P2P-посредника. Второй вариант — сумма превысила порог ручной проверки, и к сроку рельса добавилось 24–72 часа compliance. Проверьте имя отправителя в выписке: если вместо названия провайдера появился человек, рельс изменился.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="kyc">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">04</span>
+      <h2>Верификация до выигрыша: KYC, подтверждение адреса, source of funds</h2>
+    </div>
+    <p class="answer">Самый длинный отрезок в первой выплате — проверка личности: от 2 до 48 часов. <strong>Пройдите её сразу после регистрации</strong>, до депозита, и первый вывод пойдёт по короткому сценарию.</p>
+    <div class="docs" aria-label="Три уровня проверки">
+      <div><h3>KYC — личность</h3><p>Паспорт или водительское удостоверение, селфи с документом или liveness-проверка через камеру. Запрашивается у всех лицензионных операторов до первой выплаты.</p></div>
+      <div><h3>PoA — адрес</h3><p>Счёт за коммунальные услуги, выписка из банка или справка с адресом не старше 3 месяцев. Нужна, если адрес в профиле отличается от документа или регулятор требует его подтверждать.</p></div>
+      <div><h3>SoF / SoW — происхождение средств</h3><p>Выписка, справка о доходах, договор о продаже имущества. Запрашивается при депозитах и выигрышах выше порога усиленной проверки, у европейских лицензий — от 2 000 € накопленным итогом.</p></div>
+    </div>
+    <div class="text">
+      <p>Порядок, который сокращает срок вдвое: загрузить документы в день регистрации, дождаться статуса «верифицирован», затем вносить депозит. Оператор проверяет документы в той же очереди, что и заявки на вывод, но без давления суммы на балансе вы не теряете дней, пока очередь идёт. Казино с быстрыми выплатами и регистрацией в один клик принимает депозит без документов, но выплатит только после их проверки: обязанность установить личность до выплаты записана в AML-правилах регулятора, будь то Curaçao Gaming Authority, MGA или Kahnawake Gaming Commission.</p>
+      <p>Качество файлов решает больше, чем кажется. Проверку часто делает подрядчик (Sumsub, Veriff, Onfido и подобные), и его алгоритм отклоняет скан с бликом, обрезанный уголок, фото с экрана. Повторная загрузка — повторная очередь. Снимайте документ целиком, на ровном фоне, без вспышки, все четыре угла в кадре; селфи — при дневном свете.</p>
+      <p>Расхождение имени — отдельная причина блокировок из строки 11 таблицы. Имя в профиле должно совпадать с документом буква в букву, в той транслитерации, что в загранпаспорте или на карте. Карта, с которой шёл депозит, должна принадлежать вам: выплата на чужую карту запрещена правилами всех лицензий, а депозит с чужой карты — повод для отказа в выплате и возврата депозита отправителю.</p>
+      <p>Source of funds просят не для отказа, а для закрытия файла по усиленной проверке (EDD). Выписка за три месяца с видимой зарплатой закрывает вопрос за сутки. Отказ предоставить документы останавливает выплату бессрочно, и регулятор здесь встанет на сторону оператора.</p>
+    </div>
+    <details class="q">
+      <summary>Можно ли выводить на карту, с которой не делал депозит?</summary>
+      <div class="reply">По правилу closed-loop оператор возвращает деньги тем же способом, которым они пришли, до суммы депозита; выигрыш сверх депозита можно выводить другим способом на своё имя. Карта должна быть вашей, и касса вправе попросить её фото с закрытыми средними цифрами. Вывод на карту другого человека отклоняют у любого лицензионного оператора.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="profiles">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">05</span>
+      <h2>Из чего складывается срок: четыре профиля игрока</h2>
+    </div>
+    <p class="answer">Один и тот же оператор платит одному игроку за час, другому — за четыре дня. Разница не в удаче: <strong>к базовым 0,5–4 часам добавляются проверки, которые игрок включает сам</strong> — отсутствием верификации, бонусом, суммой выше порога, выбором карты.</p>
+    <figure class="pair">
+      <svg role="img" width="100%" height="250" aria-labelledby="prof-t prof-d">
+        <title id="prof-t">Типовой срок выплаты по четырём профилям игрока, разбитый на этапы, шкала от 0 до 80 часов</title>
+        <desc id="prof-d">Составные бары: верифицированный игрок без бонуса — 3,5 часа; первый вывод без верификации — 27,5 часа; вывод с бонусного баланса — 15,5 часа; крупная сумма выше порога ручной проверки с зачислением на карту — 78 часов.</desc>
+        <g font-size="12" fill="var(--text-3)">
+          <g stroke="var(--rule)"><line x1="30%" y1="10" x2="30%" y2="212"/><line x1="60%" y1="10" x2="60%" y2="212"/><line x1="90%" y1="10" x2="90%" y2="212"/></g>
+          <line x1="0%" y1="212" x2="100%" y2="212" stroke="var(--rule-2)"/>
+          <text x="0%" y="230">0 ч</text><text x="30%" y="230" text-anchor="middle">24 ч</text><text x="60%" y="230" text-anchor="middle">48 ч</text><text x="90%" y="230" text-anchor="middle">72 ч</text>
+        </g>
+        <g font-size="13" fill="var(--text)">
+          <text x="0%" y="24">Верифицирован, без бонуса, СБП или USDT — 3,5 ч</text>
+          <rect x="0%" y="30" width="2.5%" height="14" fill="var(--text-3)"/><rect x="2.5%" y="30" width="1.25%" height="14" fill="var(--wait)"/><rect x="3.75%" y="30" width=".6%" height="14" fill="var(--ok)"/>
+          <text x="0%" y="74">Первый вывод без верификации — 27,5 ч</text>
+          <rect x="0%" y="80" width="2.5%" height="14" fill="var(--text-3)"/><rect x="2.5%" y="80" width="30%" height="14" fill="var(--amber)"/><rect x="32.5%" y="80" width="1.25%" height="14" fill="var(--wait)"/><rect x="33.75%" y="80" width=".6%" height="14" fill="var(--ok)"/>
+          <text x="0%" y="124">Вывод с бонусного баланса — 15,5 ч</text>
+          <rect x="0%" y="130" width="2.5%" height="14" fill="var(--text-3)"/><rect x="2.5%" y="130" width="15%" height="14" fill="var(--amber)"/><rect x="17.5%" y="130" width="1.25%" height="14" fill="var(--wait)"/><rect x="18.75%" y="130" width=".6%" height="14" fill="var(--ok)"/>
+          <text x="0%" y="174">Крупная сумма выше порога, на карту — 78 ч</text>
+          <rect x="0%" y="180" width="2.5%" height="14" fill="var(--text-3)"/><rect x="2.5%" y="180" width="60%" height="14" fill="var(--amber)"/><rect x="62.5%" y="180" width="5%" height="14" fill="var(--wait)"/><rect x="67.5%" y="180" width="30%" height="14" fill="var(--ok)"/>
+        </g>
+      </svg>
+      <div class="key"><span><i style="background:var(--text-3)"></i>pending</span><span><i style="background:var(--amber)"></i>проверка (KYC, вейджер, compliance)</span><span><i style="background:var(--wait)"></i>обработка провайдером</span><span><i style="background:var(--ok)"></i>зачисление</span></div>
+      <figcaption>Типовые значения — середины диапазонов из правил касс и регламентов рельсов; диапазоны в таблице. Оценка редакции, 2026, не замер конкретных операторов.</figcaption>
+      <div class="flat">
+        <table>
+          <thead><tr><th>Профиль</th><th>Pending</th><th>Проверка</th><th>Обработка</th><th>Зачисление</th><th>Типовой итог</th><th>Диапазон</th></tr></thead>
+          <tbody>
+            <tr><td>Верифицирован, без бонуса, СБП или USDT</td><td class="num">2 ч</td><td class="num">—</td><td class="num">1 ч</td><td class="num">0,5 ч</td><td class="num">3,5 ч</td><td class="num">0,5–4 ч</td></tr>
+            <tr><td>Первый вывод без верификации</td><td class="num">2 ч</td><td class="num">24 ч</td><td class="num">1 ч</td><td class="num">0,5 ч</td><td class="num">27,5 ч</td><td class="num">3–50 ч</td></tr>
+            <tr><td>Вывод с бонусного баланса</td><td class="num">2 ч</td><td class="num">12 ч</td><td class="num">1 ч</td><td class="num">0,5 ч</td><td class="num">15,5 ч</td><td class="num">4–28 ч</td></tr>
+            <tr><td>Крупная сумма выше порога, на карту</td><td class="num">2 ч</td><td class="num">48 ч</td><td class="num">4 ч</td><td class="num">24 ч</td><td class="num">78 ч</td><td class="num">30–96 ч</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </figure>
+    <div class="text">
+      <p>Первый профиль — ориентир, к которому стоит приводить себя у каждого оператора: документы загружены, бонусы не активны, способ вывода — тот, где зачисление измеряется минутами. На такой профиль рассчитано обещание «казино с быстрыми выплатами» в рекламе, и для него оно выполнимо.</p>
+      <p>Второй профиль — новичок, сделавший депозит до верификации. Проверка документов занимает основную часть срока, и ускорить её нельзя ничем, кроме качества файлов. Третий — игрок с бонусом: перед выплатой касса пересчитывает вейджер, вклад игр и максимальную ставку по всем раундам, у крупных операторов автоматически, у мелких — вручную. Четвёртый складывает худшее: ручную проверку по сумме, медленную обработку крупной заявки и карту через посредника.</p>
+      <p>Сложение работает буквально. Новичок с бонусом и крупным выигрышем на карту получает все четыре надбавки, и неделя ожидания у него — не обман, а сумма правил, которые он принял при регистрации. Разобрать свой случай по строкам таблицы кейсов — быстрее, чем спорить с поддержкой.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="rules">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">06</span>
+      <h2>Честные лицензионные казино с быстрыми выплатами в 2026 году: что читать в правилах кассы до регистрации</h2>
+    </div>
+    <p class="answer">Пять пунктов правил предсказывают скорость выплаты лучше любого рейтинга: <strong>срок обработки, лимиты, порог ручной проверки, список способов вывода, регулятор с рабочей формой жалобы</strong>. На чтение уходит десять минут.</p>
+    <div class="text">
+      <p>Для игрока из России ситуация с лицензиями проста: по 244-ФЗ онлайн-казино в стране запрещены, российской лицензии не существует, поэтому любой сайт работает по иностранному разрешению, и спор о выплате решается по правилам того регулятора. Отсюда первый пункт проверки — номер лицензии в подвале и ссылка на реестр. Для Кюрасао после реформы LOK (Landsverordening op de kansspelen, закон вступил в силу 24 декабря 2024 года) разрешения выдаёт Curaçao Gaming Authority напрямую, старые мастер-лицензии с сублицензиями закрываются, а у регулятора появился портал для жалоб игроков. MGA (Мальта) ведёт публичный реестр и Player Support Unit, Kahnawake Gaming Commission принимает жалобы по почте, Isle of Man GSC — через форму. Если в подвале только логотип без номера или номер не находится в реестре, обещания быстрых выплат нечем подкрепить.</p>
+      <p>Второй пункт — срок обработки заявки, записанный числом. «До 24 часов» означает батчи, «мгновенно после одобрения» — автоматическую обработку до порога. Третий — лимиты на вывод за транзакцию, сутки, неделю и месяц, и отдельно порог, с которого включается ручная проверка. Операторы с низким месячным лимитом растягивают крупный выигрыш на недели, оставаясь честными по букве правил. Четвёртый — список способов вывода именно для вашей страны, а не общий: СБП, карта МИР, USDT TRC-20, кошельки. Если для России остаётся только карта, читайте раздел о рельсах. Пятый — пункт о комиссиях: сколько бесплатных выводов в сутки, процент сверх, кто платит сетевую комиссию.</p>
+      <p>Регистрация — момент, когда эти условия принимаются. Заполняйте профиль данными из документа, который загрузите на верификацию; укажите страну проживания честно — вход с VPN из юрисдикции, запрещённой лицензией, даёт оператору право аннулировать выигрыш по правилам. Включите двухфакторную аутентификацию: при споре о выплате доказательство, что аккаунтом управляли вы, работает на вас.</p>
+      <p>Слова «самое честное казино с быстрыми выплатами» в рекламе проверяются одним действием — поиском номера лицензии в реестре регулятора. Ни отзывы, ни место в чужом топе этого не заменяют.</p>
+    </div>
+    <details class="q">
+      <summary>Сертификат iTech Labs или eCOGRA на сайте говорит что-то о скорости выплат?</summary>
+      <div class="reply">Нет. Лаборатории сертифицируют генератор случайных чисел и заявленную отдачу игр, а не кассу. О выплатах говорят только правила оператора и дисциплина регулятора. eCOGRA отдельно работает как ADR — независимый орган разбора споров — и в этой роли полезен, если оператор назвал его в правилах.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="rating">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">07</span>
+      <h2>Рейтинг казино с быстрыми выплатами: пять метрик вместо звёзд</h2>
+    </div>
+    <p class="answer">Чужие топы операторов мира ранжируют по комиссии партнёрки, а не по кассе. <strong>Свой рейтинг собирается из пяти чисел</strong>, которые видны в правилах и в первой же выплате.</p>
+    <ul class="metrics">
+      <li><b>Медиана до денег</b><span>Время от запроса до поступления на СБП или в USDT у верифицированного игрока без бонуса. Целевое значение — до 4 часов; меряется по своим трём первым выводам.</span></li>
+      <li><b>Доля в срок</b><span>Сколько заявок уложились в срок из правил. Два опоздания из пяти — предупреждение, три — повод сменить оператора.</span></li>
+      <li><b>Лимит на заявку</b><span>Максимальная сумма за транзакцию и за сутки. Чем ближе дневной лимит к недельному, тем меньше смысла дробить выигрыш.</span></li>
+      <li><b>Порог ручной проверки</b><span>Сумма, с которой заявку смотрит человек. У операторов с автоматизированным compliance порог высокий и объявлен; у остальных — «на усмотрение».</span></li>
+      <li><b>Бесплатные выводы</b><span>Число заявок в сутки без комиссии и процент сверх. Один бесплатный вывод в неделю — скрытое ограничение частоты.</span></li>
+    </ul>
+    <div class="text">
+      <p>Эти метрики не назовут лучшие казино с быстрыми выплатами мира, зато отсеивают кассы, которые медленны по конструкции. Дальше рейтинг уточняет практика: первая выплата показывает рельс (по имени отправителя в выписке), вторая — повторяемость срока, третья — поведение поддержки при вопросе. Три вывода на небольшие суммы до того, как на балансе появится крупная, — дешёвая проверка по сравнению с неделей спора.</p>
+      <p>Отзывы в этой схеме — источник сигналов, не оценок: повторяющийся сюжет «просят документы повторно после одобрения» или «отменили выигрыш за ставку 6 € при лимите 5» указывает на конкретный пункт правил, который стоит перечитать. Единичная жалоба на срок без деталей не говорит ничего.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="bonus">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">08</span>
+      <h2>Бонус и вывод: вейджер, вклад игр, максимальная ставка, max cashout</h2>
+    </div>
+    <p class="answer">Бонус добавляет к выплате проверку от 1 до 24 часов и три способа потерять выигрыш. <strong>Если цель — быстрый вывод, играйте с реального баланса</strong>; если бонус нужен, прочитайте четыре числа в условиях до активации.</p>
+    <div class="text">
+      <p>Вейджер — множитель оборота: бонус 10 000 ₽ при x30 требует ставок на 300 000 ₽ до вывода. Вклад игр — доля ставки, которая засчитывается в оборот: слоты обычно 100 %, настольные игры и live-столы 0–10 %, так что отыгрыш за рулеткой растягивается в десять раз. Максимальная ставка при активном бонусе — 5 € или около 500 ₽ за спин, и один спин выше порога даёт оператору право аннулировать весь выигрыш как irregular play (строка 9 таблицы). Max cashout — потолок выплаты с бонусных денег, часто x5–x10 от суммы бонуса; всё сверх потолка списывается при выводе (строка 8).</p>
+      <p>Два технических момента влияют на срок. Первый: при выводе касса проверяет историю раундов на соблюдение всех четырёх условий; автоматизированные операторы делают это за минуты, остальные — вручную, и заявка стоит в очереди compliance до суток. Второй: порядок списания. При схеме sticky бонусные деньги привязаны к балансу, и вывод возможен только после полного отыгрыша; при non-sticky сначала играют реальные деньги, и, выиграв до касания бонуса, можно отказаться от него и вывести выигрыш без вейджера за базовое время. Какая схема у оператора, написано в условиях акции словами «бонус отыгрывается после реальных средств» или не написано вовсе — тогда считайте схему sticky.</p>
+      <p>Отказ от бонуса возможен до первой ставки с него: кнопка в профиле или запрос в поддержку. После первой ставки отказ означает списание бонуса и выигрыша с него. Фриспины считаются бонусом с теми же условиями: выигрыш с бесплатных вращений попадает на бонусный баланс с вейджером и max cashout.</p>
+    </div>
+    <details class="q">
+      <summary>Бездепозитный бонус выведен быстро — это нормальный признак?</summary>
+      <div class="reply">Нормальный, но не показательный. Бездепозитные бонусы ограничены max cashout в 50–100 € в эквиваленте, и выплату такой суммы оператор не проверяет вручную. Скорость крупной выплаты с реального баланса он не предсказывает; смотрите на лимиты и порог ручной проверки.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="stuck">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">09</span>
+      <h2>Если выплата зависла: маршрут из пяти шагов</h2>
+    </div>
+    <p class="answer">Маршрут занимает до двух недель и заканчивается либо деньгами, либо жалобой регулятору с полным комплектом доказательств. <strong>Шаги идут строго по порядку</strong>: жалоба без тикета в поддержку регулятор вернёт.</p>
+    <figure class="pair">
+      <svg role="img" viewBox="0 0 640 560" aria-labelledby="route-t route-d" style="max-width:640px;margin:0 auto">
+        <title id="route-t">Схема маршрута из пяти шагов при зависшей выплате с двумя исходами</title>
+        <desc id="route-d">Пять шагов сверху вниз: фиксация запроса, проверка своей стороны, тикет в поддержку, эскалация через 72 часа, регулятор или ADR через 14 дней; после третьего и четвёртого шага возможен исход «деньги получены», после пятого — «решение регулятора».</desc>
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5 0 10z" fill="var(--rule-2)"/></marker></defs>
+        <g font-family="var(--f-sans)" font-size="14" fill="var(--text)">
+          <g><rect x="40" y="16" width="360" height="56" rx="8" fill="var(--card-2)" stroke="var(--rule)"/><circle cx="68" cy="44" r="14" fill="var(--amber)"/><text x="68" y="49" text-anchor="middle" font-weight="600" fill="var(--on-amber)">1</text><text x="94" y="40" font-weight="600">Зафиксируйте запрос</text><text x="94" y="60" font-size="12" fill="var(--text-2)">ID заявки, время, сумма, способ, скриншот</text></g>
+          <line x1="220" y1="72" x2="220" y2="104" stroke="var(--rule-2)" stroke-width="2" marker-end="url(#arr)"/>
+          <g><rect x="40" y="108" width="360" height="56" rx="8" fill="var(--card-2)" stroke="var(--rule)"/><circle cx="68" cy="136" r="14" fill="var(--amber)"/><text x="68" y="141" text-anchor="middle" font-weight="600" fill="var(--on-amber)">2</text><text x="94" y="132" font-weight="600">Проверьте свою сторону</text><text x="94" y="152" font-size="12" fill="var(--text-2)">верификация, оборот, ставка при бонусе, сеть</text></g>
+          <line x1="220" y1="164" x2="220" y2="196" stroke="var(--rule-2)" stroke-width="2" marker-end="url(#arr)"/>
+          <g><rect x="40" y="200" width="360" height="56" rx="8" fill="var(--card-2)" stroke="var(--rule)"/><circle cx="68" cy="228" r="14" fill="var(--amber)"/><text x="68" y="233" text-anchor="middle" font-weight="600" fill="var(--on-amber)">3</text><text x="94" y="224" font-weight="600">Один тикет в поддержку</text><text x="94" y="244" font-size="12" fill="var(--text-2)">причина и срок письменно, ссылка на пункт правил</text></g>
+          <line x1="220" y1="256" x2="220" y2="288" stroke="var(--rule-2)" stroke-width="2" marker-end="url(#arr)"/>
+          <line x1="400" y1="228" x2="456" y2="228" stroke="var(--ok)" stroke-width="2" marker-end="url(#arr)"/>
+          <g><rect x="40" y="292" width="360" height="56" rx="8" fill="var(--card-2)" stroke="var(--rule)"/><circle cx="68" cy="320" r="14" fill="var(--amber)"/><text x="68" y="325" text-anchor="middle" font-weight="600" fill="var(--on-amber)">4</text><text x="94" y="316" font-weight="600">Эскалация через 72 часа</text><text x="94" y="336" font-size="12" fill="var(--text-2)">письмо compliance с перепиской и ID</text></g>
+          <line x1="220" y1="348" x2="220" y2="380" stroke="var(--rule-2)" stroke-width="2" marker-end="url(#arr)"/>
+          <line x1="400" y1="320" x2="456" y2="320" stroke="var(--ok)" stroke-width="2" marker-end="url(#arr)"/>
+          <g><rect x="40" y="384" width="360" height="56" rx="8" fill="var(--card-2)" stroke="var(--rule)"/><circle cx="68" cy="412" r="14" fill="var(--amber)"/><text x="68" y="417" text-anchor="middle" font-weight="600" fill="var(--on-amber)">5</text><text x="94" y="408" font-weight="600">Регулятор или ADR через 14 дней</text><text x="94" y="428" font-size="12" fill="var(--text-2)">CGA, MGA PSU, KGC, eCOGRA — по номеру лицензии</text></g>
+          <line x1="220" y1="440" x2="220" y2="472" stroke="var(--rule-2)" stroke-width="2" marker-end="url(#arr)"/>
+          <rect x="460" y="200" width="150" height="176" rx="8" fill="var(--ok-tint)" stroke="var(--ok)"/><text x="535" y="280" text-anchor="middle" font-weight="600" fill="var(--ok)">Деньги</text><text x="535" y="300" text-anchor="middle" font-weight="600" fill="var(--ok)">получены</text><text x="535" y="322" text-anchor="middle" font-size="12" fill="var(--ok)">после шага 3 или 4</text>
+          <rect x="40" y="476" width="360" height="60" rx="8" fill="var(--wait-tint)" stroke="var(--wait)"/><text x="220" y="502" text-anchor="middle" font-weight="600" fill="var(--wait)">Решение регулятора или ADR</text><text x="220" y="522" text-anchor="middle" font-size="12" fill="var(--wait)">до 30 дней; в пользу игрока — при чистом комплекте доказательств</text>
+        </g>
+      </svg>
+      <figcaption>Схема повторяет список шагов ниже. Сроки 72 часа и 14 дней — ориентиры, с которыми регуляторы принимают жалобу как исчерпавшую внутренний порядок оператора.</figcaption>
+    </figure>
+    <ol class="route">
+      <li><b>Зафиксируйте запрос.</b> Сохраните ID заявки на вывод, дату и время, сумму, выбранный способ и скриншот статуса в кассе. Без этих данных поддержка отвечает шаблоном.</li>
+      <li><b>Проверьте свою сторону.</b> Верификация пройдена, оборот депозита выполнен, при игре с бонусом не превышалась максимальная ставка, сеть кошелька указана верно. Любой из этих пунктов объясняет паузу без вины оператора.</li>
+      <li><b>Один тикет в поддержку.</b> Спросите письменно причину и срок, сошлитесь на пункт правил о сроках вывода. Не плодите чаты и не отменяйте заявку: отмена возвращает деньги на баланс, а новая заявка запускает pending-период заново.</li>
+      <li><b>Эскалация через 72 часа.</b> Письмо на адрес жалоб или compliance-отдела оператора с приложенной перепиской и ID заявки. Укажите, что при отсутствии ответа обратитесь к регулятору по номеру лицензии.</li>
+      <li><b>Регулятор или ADR через 14 дней.</b> Форма жалобы Curaçao Gaming Authority, Player Support Unit у MGA, Kahnawake Gaming Commission или независимый ADR вроде eCOGRA, если оператор его указал. Приложите всё из шага 1 и переписку из шагов 3–4.</li>
+    </ol>
+    <div class="text">
+      <p>Что считается доказательством у регулятора: переписка с датами, ID заявок, выписка банка или хэш транзакции, скриншоты правил на дату спора (правила меняют, архивная копия страницы помогает). Что не считается: эмоциональные описания, отзывы других игроков, скриншоты без даты и адреса страницы.</p>
+      <p>Чего регулятор не сделает: не заставит оператора выплатить выигрыш, аннулированный по пункту правил, который вы приняли; не ускорит выплату, если срок из правил ещё не прошёл; не рассмотрит жалобу на оператора без лицензии — в этом случае спорить не с кем, и единственная защита — не нести деньги в такую кассу.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="bank">
+  <div class="page capsule">
+    <div>
+      <span class="idx num">10</span>
+      <h2>Банк на стороне получателя: 115-ФЗ, 161-ФЗ и двухдневная пауза</h2>
+    </div>
+    <p class="answer">Выплата может быть исполнена оператором и всё равно не дойти вовремя. <strong>Российский банк проверяет входящие переводы по двум законам</strong>, и игрок влияет на это сильнее, чем кажется.</p>
+    <div class="text">
+      <p>115-ФЗ «О противодействии легализации доходов» даёт банку право приостановить операцию и запросить документы, если она подпадает под признаки сомнительных — перечень для физлиц собран в методических рекомендациях Банка России 16-МР от 6 сентября 2021 года: много контрагентов-физлиц, высокая частота зачислений и списаний, быстрый вывод наличных, отсутствие обычных платежей по счёту. Поступления от P2P-посредника касс (строка 4 таблицы) совпадают с этим портретом, особенно если выигрыш разносится по нескольким картам.</p>
+      <p>161-ФЗ «О национальной платёжной системе» с 25 июля 2024 года обязывает банк на два дня задержать перевод, если реквизиты получателя или отправителя есть в базе Банка России об операциях без согласия клиента. Карта посредника, которую пожаловался другой человек, попадает в базу, и перевод с неё к вам встаёт на паузу вне зависимости от вашей репутации. По той же базе банк может ограничить ваши собственные исходящие переводы, если ваша карта в неё попала после чужой жалобы.</p>
+      <p>Что снижает риск: один банк и одна карта для выплат, без дробления; СБП или USDT вместо карты через посредника; готовность ответить банку по существу — выписка с платформы, ID транзакции, пояснение. Что повышает: приём денег на карты родственников, немедленный перевод всей суммы дальше, снятие наличных в день поступления. Налоговая сторона отдельна: выигрыш у иностранного оператора — доход, который по НК РФ декларирует сам получатель по ставке НДФЛ; банк налоговым агентом здесь не выступает.</p>
+    </div>
+    <details class="q">
+      <summary>Банк отключил дистанционное обслуживание после трёх поступлений — что делать?</summary>
+      <div class="reply">Прийти в отделение с паспортом и документами о происхождении средств: выпиской из кассы оператора, подтверждением личности на платформе, пояснением в свободной форме. Банк обязан рассмотреть документы и либо снять ограничение, либо дать письменный отказ, который обжалуется через межведомственную комиссию при Банке России. Закрывать счёт и открывать новый в другом банке не поможет: сведения об отказах передаются в Росфинмониторинг.</div>
+    </details>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="page">
+    <span class="idx num">11</span>
+    <h2>Вопросы о скорости выплат</h2>
+    <p class="intro">Ответы повторяют разметку FAQ на странице дословно; цифры взяты из разделов выше.</p>
+    <details class="q">
+      <summary>Сколько реально ждать выплату в 2026 году?</summary>
+      <div class="reply">В казино с быстрыми выплатами у верифицированного игрока без активного бонуса при выводе по СБП или в USDT TRC-20 деньги приходят за 0,5–4 часа: это pending-период плюс обработка плюс зачисление. Первый вывод без верификации занимает 3–50 часов из-за проверки документов. Крупная сумма выше порога ручной проверки с зачислением на карту укладывается в 30–96 часов. Цифры по профилям есть в таблице раздела «Из чего складывается срок».</div>
+    </details>
+    <details class="q">
+      <summary>Почему казино с быстрыми выплатами платит быстро только после верификации?</summary>
+      <div class="reply">Лицензионный оператор обязан установить личность до первой выплаты по правилам AML своего регулятора. Пока документы не проверены, заявка стоит в очереди на KYC, а это самый длинный этап. Загрузите паспорт, селфи и подтверждение адреса сразу после регистрации, до первого депозита, тогда первый вывод пойдёт по короткому сценарию.</div>
+    </details>
+    <details class="q">
+      <summary>Ускорит ли выплату отмена заявки и новый запрос?</summary>
+      <div class="reply">Нет. Отмена возвращает сумму на игровой баланс, а новая заявка встаёт в конец очереди и заново отсчитывает pending-период. Если касса работает батчами по cut-off, вы рискуете пропустить ближайший батч. Единственный случай, когда пересоздать заявку разумно: вы ошиблись в реквизитах или в сети кошелька.</div>
+    </details>
+    <details class="q">
+      <summary>Что такое reverse withdrawal и чем он опасен?</summary>
+      <div class="reply">Это кнопка, которая возвращает ожидающую выплату обратно на баланс одним нажатием. Операторы держат её в интерфейсе, потому что часть игроков отменяет вывод и проигрывает его. Комиссия по азартным играм Великобритании (UKGC) с 2020 года запрещает своим лицензиатам эту функцию, у операторов под лицензией Кюрасао она встречается регулярно. Если кнопка есть, не трогайте её.</div>
+    </details>
+    <details class="q">
+      <summary>Банк задержал зачисление на два дня — это вина оператора?</summary>
+      <div class="reply">Чаще нет. С 25 июля 2024 года по 161-ФЗ российский банк обязан приостановить на два дня перевод, если реквизиты получателя или отправителя есть в базе Банка России о мошеннических операциях, а по 115-ФЗ банк вправе запросить документы о происхождении средств. Выплата оператора при этом уже исполнена: у вас есть ID транзакции. Отвечайте банку по существу и не дробите поступления по нескольким картам.</div>
+    </details>
+    <details class="q">
+      <summary>Кто берёт комиссию за вывод?</summary>
+      <div class="reply">Три участника: оператор (часто бесплатно 1–3 вывода в сутки, дальше 1–3 %), платёжный провайдер (фиксированная сумма за транзакцию на карту или сетевая комиссия в USDT — несколько долларов в TRC-20) и банк получателя при конвертации валюты. Сумму комиссии касса обязана показать до подтверждения заявки; если её показывают только постфактум, это красный флаг.</div>
+    </details>
+  </div>
+</section>
+
+<div class="page">
+  <aside class="care" aria-label="Ответственная игра">
+    <b>18+.</b> Азартные игры связаны с риском потери денег и не являются способом заработка. В России онлайн-казино запрещены по 244-ФЗ; страница описывает механику выплат иностранных операторов и не содержит ссылок на них. Устанавливайте лимиты депозита и времени, используйте самоисключение, если игра перестаёт быть развлечением.
+  </aside>
+
+  <section class="channel" id="channel">
+    <div>
+      <h2>Где следить за сроками выплат</h2>
+      <p>Пороги лимитов, рельсы и регламенты регуляторов меняются несколько раз в год. Дата последнего пересмотра таблицы кейсов стоит в начале страницы; изменения между пересмотрами и разборы новых ситуаций в казино с быстрыми выплатами редакция публикует в Telegram-канале.</p>
+    </div>
+    <a class="go" href="https://t.me/top_casino_2027" rel="noopener" target="_blank">Канал в Telegram</a>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <div class="page cols">
+    <div><b>Касса за час</b><br>Редакция разбирает, как устроены казино с быстрыми выплатами: pending, верификацию, рельсы, лимиты, споры. Названий операторов на странице нет, партнёрских ссылок нет.</div>
+    <div><b>Источники</b><br>Правила касс лицензионных операторов, регламенты НСПК (СБП, МИР), документация Visa Direct / Mastercard Send, законы 115-ФЗ, 161-ФЗ, 244-ФЗ, рекомендации ЦБ 16-МР, акты регуляторов CGA (LOK), MGA, KGC.</div>
+    <div><b>Обновления</b><br>Опубликовано 1 октября 2026. Сроки в таблицах — типовые диапазоны, не гарантия; проверяйте правила конкретной кассы на дату запроса.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var mast=document.getElementById('mast');
+  function stuck(){mast.classList.toggle('is-stuck',window.scrollY>8)}
+  window.addEventListener('scroll',stuck,{passive:true});stuck();
+  var links=[].slice.call(document.querySelectorAll('.anchors a'));
+  if('IntersectionObserver' in window){
+    var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('is-here')});var a=map[e.target.id];if(a)a.classList.add('is-here')}})},{rootMargin:'-40% 0px -55% 0px'});
+    Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el)});
+  }
+  var picker=document.querySelector('.picker');if(!picker)return;
+  var btns=[].slice.call(picker.querySelectorAll('button')),out=picker.querySelector('output');
+  var rows=[].slice.call(document.querySelectorAll('.ledger tbody tr[data-grp]')),heads=[].slice.call(document.querySelectorAll('.ledger tbody tr:not([data-grp])'));
+  function apply(k){
+    var n=0;rows.forEach(function(r){var show=k==='all'||r.getAttribute('data-grp')===k;r.hidden=!show;if(show)n++});
+    heads.forEach(function(h){var next=h.nextElementSibling;h.hidden=!(next&&!next.hidden)});
+    btns.forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-pick')===k))});
+    out.textContent=n+' из '+rows.length;
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-pick');apply(b.getAttribute('aria-pressed')==='true'&&k!=='all'?'all':k)})});
+})();
+</script>
+</body>
+</html>
